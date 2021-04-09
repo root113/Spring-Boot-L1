@@ -1,11 +1,11 @@
 # Spring-Boot-L1
 ## Setup
-1. Download this repository as ```.zip``` or clone the repository by following command
+**1. Download this repository as ```.zip``` or clone the repository by following command**
 ```
 git clone https://github.com/root113/Spring-Boot-L1.git
 ```
 
-2. You need to have ```PostgreSQL``` and ```Docker``` installed on your system
+**2. You need to have ```PostgreSQL``` and ```Docker``` installed on your system**
    - To install PostgreSQL follow the instructions on these links below depending on your OS: 
       - For Windows, refer to [here](https://www.postgresqltutorial.com/install-postgresql/).
       - For MacOS, refer to [here](https://www.postgresqltutorial.com/install-postgresql-macos/).
@@ -18,7 +18,7 @@ git clone https://github.com/root113/Spring-Boot-L1.git
       - For Fedora, refer to [here](https://docs.docker.com/engine/install/fedora/).
       - For CentOS, refer to [here](https://docs.docker.com/engine/install/centos/).
 
-3. Start a postgres instance and follow the insturctions. (You can name credentials at your will but remember that you have to change relevant parts inside source code according to it)
+**3. Start a postgres instance and follow the insturctions. (You can name credentials at your will but remember that you have to change relevant parts inside source code according to it)**
    1. Init:
       ```
       docker run --name postgres-spring -e POSTGRES_PASSWORD=1234 -d -p  5432:5432 postgres:alpine
@@ -32,12 +32,12 @@ git clone https://github.com/root113/Spring-Boot-L1.git
       docker exec -it container_id bin/bash
       ```
 
-4. Switch to user postgres
+**4. Switch to user postgres**
    ```
    psql -U postgres
    ```
 
-5. Database setup
+**5. Database setup**
    1. Create database and connect:
       ```
       CREATE DATABASE demodb;
